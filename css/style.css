@@ -215,3 +215,25 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+
+/* gallery html */
+.class1 {
+  width: 400px;
+  height: auto;
+}
+#swiper {
+  width: 400px;
+  height: auto;
+}
+#swipers img {
+  width: 400px;
+  height: auto;
+}
+
+.galleryfirstcolumn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+/*  contact html */
