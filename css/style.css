@@ -4,12 +4,20 @@ body {
 
 .maindi {
   display: flex;
-  width: 100%;
+   width: 100%;
   background-color:#10e718;
   align-items: center;
   gap: 20px;
-  
- /* color:; */
+  font-family: "BPG Mrgvlovani Caps", sans-serif;   
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 .headerlogo{
   width: 90px;
@@ -21,8 +29,8 @@ body {
 .n79 {
   font-size: 30px;
   color: rgb(255, 255, 255);
-  font-family:sans-serif;
-  font: bold;
+  font-family: "BPG Mrgvlovani Caps", sans-serif; 
+  font-weight: bold;
   
 
 }
@@ -40,15 +48,90 @@ body {
   font-size: 20px ;
   /* max-width:1520px ;*/
   width: 100%;
+  font-family: "BPG Mrgvlovani Caps", sans-serif; 
+  position: relative;
 
 
 }
+
+
+
+
+
+.line {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+.line::before,
+.line::after {
+  content: '';
+  position:absolute;
+  transition: all .5s ease-in-out;
+}
+.line::before {
+  transform: translateY(-16px);
+}
+.line::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.burger.open .line {
+  transform: translateY(1px);
+}
+.burger.open #line1 {
+ transform: translateY(1px) rotate(-45deg);
+}
+.burger.open #line2 {
+  transform: translateY(-5px) rotate(45deg);
+}
+.burger.open #line3 {
+  display: none;
+}
+
+
+
+
+/* ANIMATION-END */
+.burger {
+  display: none;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  width: 200px;
+  position: absolute;
+  left: 85%;
+  
+
+}
+
+.burger div {
+  width: 25px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 2px;
+}
+
+
+
 
 .ultag {
   display: flex;
   align-items: center; 
   margin-left: 80px;
   
+}
+.ultag.active {
+  display: grid;
+  position: absolute;
+  width:80%;
+  top: 49px;
+  height: 200px;
+  /* left: 40%; */
+  text-align: center;
+  /* z-index: -1; */
+  transition: .6s;
+  gap: 20px;
+  background-color:  rgb(7, 28, 52);
 }
 
 .dropdown-menu ul li a {
@@ -102,31 +185,76 @@ body {
   font-size: 0.74rem !important;
   font-weight: bold;
   width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* Slider */
 
 .swiper {
-  width: 100%;
+  /* width: 100%; */
   height: fit-content;
   /* z-index: 2; */
 }
 .swiper-slide img {
   width: 100%;
-   height: 500px;
+  height: 500px;
+  cursor:move;
 }
+.swiper-slide {
+  position: relative;
+  text-align: center;
+ 
+}
+
+.divofdiv79 {
+  position: absolute;
+  z-index: 505;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: all-scroll;
+  
+}
+.div79 {
+  justify-content: center;
+  align-items: center;
+  font-size: 66px;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;   
+  font-weight: bold;
+  text-shadow: 2px  1px 4px #fff;
+  font-style: italic;
+  color: rgb(7, 3, 26) ;
+
+
+
+}
+.span79e {
+  color: #10e718;
+  text-shadow: none;
+  text-shadow: 2px 5px 4px #000;
+}
+.paginations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .container {
   height: 500px;
+  margin-top: 140px;
+  margin-bottom: 20px;
 }
 
 
 /* miniinfo */
 .info {
-  width: 800px;
-
-  margin-top: 100px;
+  width: 600px;
+  display: flex;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+
 }
 .text {
   font-family: sans-serif;
@@ -157,12 +285,17 @@ body {
   align-items: center;
   justify-content: space-around;
   background-color: #3dd280;
+  width: 100%;
+
 
 }
 
 .block-999 {
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-self: center; */
+  align-items: center;
+  /* text-align: center; */
 }
 
 .logo-links-999 {
@@ -170,6 +303,9 @@ body {
   gap: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   
 }
 
@@ -177,26 +313,35 @@ body {
 .logo-links-9999 {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 35px;
+  align-items: center;
+  text-align: center;
 }
 
 .contact {
-  text-align: center;
+  width: 200px;
   color: black;
   font-size: 20px;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;     
  
+}
+.name22 {
+  font-family: "BPG Mrgvlovani Caps", sans-serif;   
+  /* font-size: 20px; */
 }
 .contact h2 {
   padding-bottom: 20px;
+  text-align: center;
 }
 .contact p {
   padding-bottom: 20px;
+  text-align: center;
 }
 .rustavel {
-  width: 75px;
+  width: 65px;
 }
 .mandatur {
-  width: 75px;
+  width: 65px;
 }
 
 .logo {
@@ -208,8 +353,9 @@ body {
 .footerh2 {
   font-size: 20px;
   font-weight: bolder;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;   
 }
 .footerh22 {
   font-weight: bold;
@@ -230,9 +376,15 @@ body {
   height: auto;
 }
 
+
 .galleryfirstcolumn {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
 }
+
+
+/* gallery footer */
+
+
 
