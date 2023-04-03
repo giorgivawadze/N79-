@@ -5,7 +5,7 @@ body {
 .maindi {
   display: flex;
    width: 100%;
-  background-color:#10e718;
+  background-color: rgb(15, 49, 90);
   align-items: center;
   gap: 20px;
   font-family: "BPG Mrgvlovani Caps", sans-serif;   
@@ -204,6 +204,14 @@ header {
   text-align: center;
  
 }
+.prev {
+  background-color: #0b0334;
+  border-radius: 4px;
+}
+.next {
+  background-color:  #0b0334;
+  border-radius: 4px;
+}
 
 .divofdiv79 {
   position: absolute;
@@ -228,9 +236,9 @@ header {
 
 }
 .span79e {
-  color: #10e718;
+  color: rgb(15, 49, 90);
   text-shadow: none;
-  text-shadow: 2px 5px 4px #000;
+  text-shadow: 2px 0.5px 4px #ffffff;
 }
 .paginations {
   display: flex;
@@ -255,6 +263,17 @@ header {
   margin-right: auto;
   margin-bottom: 100px;
 
+}
+.spanss {
+  text-decoration: dotted;
+}
+.spanss span {
+  margin-left: 20px;
+}
+.divofspanss {
+  display: flex;
+  flex-direction:column;
+  margin-top: 50px;
 }
 .text {
   font-family: sans-serif;
@@ -284,7 +303,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #3dd280;
+  background-color: #9bd5ea;
   width: 100%;
 
 
@@ -361,6 +380,10 @@ header {
   font-weight: bold;
   font-size: 20px;
 }
+.nom {
+  font-size: 19px;
+  font-weight: 500;
+}
 
 /* gallery html */
 .class1 {
@@ -384,7 +407,8 @@ header {
 }
 
 
-/* gallery footer */
+
+
 
 
 

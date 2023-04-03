@@ -88,6 +88,7 @@
   section {
     margin-top: 140px;
   }
+ 
   
   .direqcia-tanamshromlebi {
     width: 200px;
@@ -264,7 +265,7 @@ header {
 .maindi {
   display: flex;
    width: 100%;
-  background-color:#10e718;
+  background-color: rgb(15, 49, 90);
   align-items: center;
   gap: 20px; 
   font-family: "BPG Mrgvlovani Caps", sans-serif; 

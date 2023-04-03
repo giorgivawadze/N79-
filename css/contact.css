@@ -8,7 +8,7 @@
   .maindi {
     display: flex;
     width: 100%;
-    background-color: #10e718;
+    background-color:rgb(15, 49, 90);
     align-items: center;
     gap: 20px;
   
@@ -135,7 +135,7 @@
     box-shadow: 1px 1px 10px 1px;
     text-align: center;
     width: 450px;
-    background-color: #79ff03;
+    background-color: #7ba3c9;
     font-family: "BPG Mrgvlovani Caps", sans-serif;  
     cursor:pointer; 
   }
