@@ -1,150 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-mrgvlovani-caps/css/bpg-mrgvlovani-caps.min.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-mrgvlovani-caps/css/bpg-mrgvlovani-caps.min.css">
+
 </head>
+
 <body>
-    <header>
-        <div class="maindi">
-          <img class="headerlogo" src="img/icon.png" alt="ICON">
-         
-          <span class="headerspan"> სსიპ ქალაქ თბილისის  <span class="n79"> N79 </span> საჯარო სკოლა</span>
-      
-      
-      
-        </div>
-        <div class="menu-bar">
-          <ul class="ultag">
-            <li><a href="index.html">მთავარი</a></li>
-            <li>
-              <a href="#">ჩვენს შესახებ <i class="fas fa-caret-down"></i></a>
-      
-              <div class="dropdown-menu">
-                <ul>
-                  <li><a href="mission.html" class="fontsize">სკოლის მისია</a></li>
-                  <li><a href="#" class="fontsize">სკოლის სტრუქტურა</a></li>
-                  <li><a href="employees.html" class="fontsize">კათედრა</a></li>
-                  <li><a href="gallery.html" class="fontsize">გალერეა</a></li>
-                </ul>
-              </div>
-            <li><a href="#">სიახლეები</a></li>
-            <li><a href="#">წრეები</a></li>
-            <li><a href="contact.html">კონტაქტი</a></li>
-          </ul>  
-      
-          <div class="burger">
-            <div id="line1" class="line "></div>
-            <div id="line2" class="line "></div>
-            <div id="line3" class="line "></div>
-            
-           </div> 
-      
-        </div>
-      
-        </header>
-        <!-- slider1 -->
-        <div class="galleryfirstcolumn">
-
-
-   
-
-        <div class="class1">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper" id="swiper">
-                  <!-- Slides -->
-                  <div class="swiper-slide" id="swipers"><img src="img/class1.jpg" alt="slider1"></div>
-                  <!-- <div class="swiper-slide" id="swipers1"><img src="img/slider.png" alt="slider2"></div>
-                  <div class="swiper-slide" id="swipers2"><img src="img/slider.png" alt="slider2"></div></div> -->
-                  
+  <header>
+    <div class="maindi">
+      <img class="headerlogo" src="img/icon.png" alt="ICON">
+     
+      <span class="headerspan"> სსიპ ქალაქ თბილისის  <span class="n79"> N79 </span> საჯარო სკოლა</span>
+  
+  
+  
+    </div>
+  
+  
+    <div class="menu-bar">
+      <ul class="ultag">
+        <li><a href="index.html">მთავარი</a></li>
+        <li>
+          <a href="#">ჩვენს შესახებ <i class="fas fa-caret-down"></i></a>
+  
+          <div class="dropdown-menu">
+            <ul>
+              <li><a href="mission.html" class="fontsize">სკოლის მისია</a></li>
+              <li class="litaag"><a href="#" class="fontsize">სკოლის სტრუქტურა   <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                   <ul class="u1">
+                   <li><a href="#" class="fontsize f1">დირექცია</a></li>
+                   <li><a href="#" class="fontsize f2">მოსწავლეთა თვითმართველობა</a></li>
+                   </ul>
+  
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+  
+              </li>
+              <li><a href="#" class="fontsize">შინაგანაწესი</a></li>
+              <li><a href="#" class="fontsize">სასწავლო გეგმა <i class="fas fa-caret-right"></i> </a>
+                <div class="dropdown-menu-2">
+                 <ul class="u2">
+                 <li><a href="#" class="fontsize">გეგმა 2022/2023</a></li>
+                 </ul>
+  
+                </div>
               
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-
-
               
-        </div>
-        </div>
-
-        </div>
-        <!-- <footer class="flex-footer-999" id="footer232">
-          <div class="firstdivof-footer">
-            <img class="logo" src="img/icon.png" alt="logo">
-            <p class="name22"> №79 საჯარო სკოლა</p>
+              
+              </li>
+              <li><a href="employees.html" class="fontsize">თანამშრომლები   <i class="fas fa-caret-right"></i></a>
+              
+                <div class="dropdown-menu-3">
+                  <ul class=" u3">
+                   <li><a href="#" class="fontsize">ადმინისტრაცია</a></li>
+                   <li><a href="#" class="fontsize"> მასწავლებლები</a></li>
+  
+  
+                  </ul>   
+  
+                </div>
+              
+              
+              </li>
+              <li><a href="gallery.html" class="fontsize">გალერეა</a></li>
+  
+            </ul>
           </div>
-       
-      
-          <div class="contact">
-            <h2 class="footerh22">კონტაქტი</h2>
-            <p>თბილისი, გლდანი, I მ/რ</p>
-            <p>Gmail:  tbilisi79@mes.gov.ge</p>
-            <p>ნომერი: 224 71 64</p>
-          </div>
-            
-          <div class="block-999">
-      
-            <h2 class="footerh2">სასარგებლო ბმულები</h2>
-            <div>
-              <a target="_blank" href="https://mes.gov.ge/index.php?lang=geo">
-                <img  src="img/M.png" alt="logo" class="saqartvelo">
-              </a>
-            </div>
-      
-            <div class="logo-links-999">
-      
-              <a target="_blank" href="https://www.naec.ge/#/ge/index">
-                <img class="logo-9" src="img/N.png" alt="logo">
-              </a>
-      
-              <a target="_blank" href="https://www.emis.ge/">
-                <img class="logo-9" src="img/Logo.png" alt="logo">
-              </a>
-      
-              <a target="_blank" href="https://rustaveli.org.ge/">
-      
-                <img class="rustavel logo-9" src="img/rustavel.png" alt="logo">
-              </a>
-      
+          </li>
+        <li><a href="#">სიახლეები</a></li>
+        <li><a href="#">წრეები</a></li>
+        <li><a href="contact.html">კონტაქტი</a></li>
+      </ul>  
+  
+      <div class="burger">
+        <div id="line1" class="line "></div>
+        <div id="line2" class="line "></div>
+        <div id="line3" class="line "></div>
         
-            </div>
+       </div> 
+  
+    </div>
+    </header>
+
+
+  <section class="images">
+
+    <h1>გალერეა</h1>
+     
+    <div class="contma">
       
-            <div class="logo-links-9999">
-              <a target="_blank" href="http://mandaturi.gov.ge/">
-                <img class="mandatur logo-9" src="img/ma.png" alt="logo">
-              </a>
-      
-              <a target="_blank" href="http://www.tpdc.ge/geo/">
-                <img class="logo-9 maswavlebel" src="img/maswavlebel.png" alt="logo">
-              </a>
-      
-              <a target="_blank" href="https://eqe.ge/ka">
-                <img class="logo-9" src="img/eqe.png" alt="logo">
-              </a>
-            </div>
-          </div>
-      
-      
-      
-        </footer> -->
-      
-       
-    <script src="burger.js"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+    <div class="gallery">
+      <a target="_blank" href="img/1.jpg">
+        <img src="img/1.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">1</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/2.jpg">
+        <img src="img/2.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">2</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/3.jpg">
+        <img src="img/3.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">3</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/4.jpg">
+        <img src="img/4.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">4</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/5.jpg">
+        <img src="img/5.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">5</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/6.jpg">
+        <img src="img/6.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">6</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/7.jpg">
+        <img src="img/7.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">7</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/8.jpg">
+        <img src="img/8.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">8</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/9.jpg">
+        <img src="img/9.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">9</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/10.jpg">
+        <img src="img/10.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">10</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/11.jpg">
+        <img src="img/11.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">11</div>
+    </div>
+
+
+    <div class="gallery">
+      <a target="_blank" href="img/12.jpg">
+        <img src="img/12.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">12</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/13.jpg">
+        <img src="img/13.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">13</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/14.jpg">
+        <img src="img/14.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/15.jpg">
+        <img src="img/15.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/16.jpg">
+        <img src="img/16.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/17.jpg">
+        <img src="img/17.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/18.jpg">
+        <img src="img/18.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/19.jpg">
+        <img src="img/19.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/20.jpg">
+        <img src="img/20.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/21.jpg">
+        <img src="img/21.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/22.jpg">
+        <img src="img/22.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/23.jpg">
+        <img src="img/23.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img/24.jpg">
+        <img src="img/24.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+   </div>
+  </section>
+
+
+
+  <footer class="flex-footer-999" id="footer232">
+    <div class="firstdivof-footer">
+      <img class="logo" src="img/icon.png" alt="logo">
+      <p class="name22"> №79 საჯარო სკოლა</p>
+    </div>
+
+
+    <div class="contact">
+      <h2 class="footerh22">კონტაქტი</h2>
+      <p>თბილისი, გლდანი, I მ/რ</p>
+      <p>Gmail: tbilisi79@mes.gov.ge</p>
+      <p>ნომერი: 224 71 64</p>
+    </div>
+
+    <div class="block-999">
+
+      <h2 class="footerh2">სასარგებლო ბმულები</h2>
+      <div>
+        <a target="_blank" href="https://mes.gov.ge/index.php?lang=geo">
+          <img src="img/M.png" alt="logo" class="saqartvelo">
+        </a>
+      </div>
+
+      <div class="logo-links-999">
+
+        <a target="_blank" href="https://www.naec.ge/#/ge/index">
+          <img class="logo-9" src="img/N.png" alt="logo">
+        </a>
+
+        <a target="_blank" href="https://www.emis.ge/">
+          <img class="logo-9" src="img/Logo.png" alt="logo">
+        </a>
+
+        <a target="_blank" href="https://rustaveli.org.ge/">
+
+          <img class="rustavel logo-9" src="img/rustavel.png" alt="logo">
+        </a>
+
+
+      </div>
+
+      <div class="logo-links-9999">
+        <a target="_blank" href="http://mandaturi.gov.ge/">
+          <img class="mandatur logo-9" src="img/ma.png" alt="logo">
+        </a>
+
+        <a target="_blank" href="http://www.tpdc.ge/geo/">
+          <img class="logo-9 maswavlebel" src="img/maswavlebel.png" alt="logo">
+        </a>
+
+        <a target="_blank" href="https://eqe.ge/ka">
+          <img class="logo-9" src="img/eqe.png" alt="logo">
+        </a>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+  <script src="burger.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>

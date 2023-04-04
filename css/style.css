@@ -1,5 +1,6 @@
 body {
   font: sans-serif;
+  background-color:#f4f4f3;
 }
 
 .maindi {
@@ -120,6 +121,23 @@ header {
   margin-left: 80px;
   
 }
+.u1 {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-menu2 {
+  display: none;
+  z-index: 100;
+}
+.fas {
+  float:right;
+  margin-left: 10px;
+}
+.fa-caret-right {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
 .ultag.active {
   display: grid;
   position: absolute;
@@ -132,6 +150,42 @@ header {
   transition: .6s;
   gap: 20px;
   background-color:  rgb(7, 28, 52);
+}
+.dropdown-menu-1 {
+  display: none;
+}
+.dropdown-menu-2 {
+  display: none;
+}
+.dropdown-menu-3 {
+  display: none;
+}
+.dropdown-menu ul li:hover .dropdown-menu-3 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  background-color: rgb(7, 28, 52);
+  width: 90%;
+  z-index: 999;
+}
+.dropdown-menu ul li:hover .dropdown-menu-2{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  background-color: rgb(7, 28, 52);
+  width: 90%;
+  z-index: 999;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  background-color: rgb(7, 28, 52);
+  z-index: 999;
 }
 
 .dropdown-menu ul li a {
@@ -165,9 +219,9 @@ header {
 .dropdown-menu ul li {
   margin-bottom: 10px;
 }
-.dropdown-menu ul li a:hover {
+.dropdown-menu ul li:hover {
   background-color: rgb(110, 110, 110);
-  border-radius: 7px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,6 +318,10 @@ header {
   margin-bottom: 100px;
 
 }
+.nameofschool {
+  font-weight: 900;
+  font-size: large;
+}
 .spanss {
   text-decoration: dotted;
 }
@@ -278,10 +336,16 @@ header {
 .text {
   font-family: sans-serif;
   font-weight: 600;
+  line-height: 25px;
   
   
 }
-
+.mintext{
+  margin-left: 20px;
+}
+.minitext {
+  margin-top: 20px;
+}
 
 /* footer */
 
@@ -383,27 +447,6 @@ header {
 .nom {
   font-size: 19px;
   font-weight: 500;
-}
-
-/* gallery html */
-.class1 {
-  width: 400px;
-  height: auto;
-}
-#swiper {
-  width: 400px;
-  height: auto;
-}
-#swipers img {
-  width: 400px;
-  height: auto;
-}
-
-
-.galleryfirstcolumn {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
 }
 
 
