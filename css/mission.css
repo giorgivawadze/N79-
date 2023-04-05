@@ -176,14 +176,14 @@ header {
 .row {
   gap: 40px;
   display: flex;
-  margin-top: 40rem;
-  margin-bottom: 10rem;
+  margin-top: 45rem;
+  margin-bottom: 5rem;
   
 }
 
 .main {
   width: 40rem;
-  min-height: 300px;
+  height: 300px;
   position: relative;
   cursor: pointer;
   margin-bottom: 10rem;
@@ -191,10 +191,10 @@ header {
 
 .main2 {
   width: 40rem;
-  min-height: 300px;
+  height: 300px;
   position: relative;
   cursor: pointer;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .service {
@@ -258,7 +258,6 @@ header {
 
   width: 200px;
   height: 30px;
-  background: #ffffff;
   margin: 50px auto;
   position: relative;
   font-style: bold;
@@ -277,11 +276,12 @@ header {
 
 .service2 p {
   margin-bottom: 10px;
-  line-height: 20px;
+  line-height: 17px;
   font-size: 12px;
   font-style: bold;
   font-family: "bpg mrgvlovani caps";
 }
+
 
 
 

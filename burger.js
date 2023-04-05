@@ -18,3 +18,14 @@ const navbarLinks = document.querySelector ('.ultag')
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle ('active')
 })
+
+
+
+
+// darktheme
+
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        
+    }

@@ -66,18 +66,38 @@
     }
 
   }
-  /* @media  screen and (max-width:1200px) {
-  
-  } */
-  @media screen and (max-width: 848px) {
-    .ultag {
+  @media  screen and (max-width:1300px) {
+     
+   .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+
+   }
+   .col-md-4 {
+    margin-bottom: 300px;
+   }
+   
+
+  }
+  @media screen and (max-width: 888px) {
+    .ultag  {
         display: none;
       }
         .burger{
             display: block;
             position: relative;
     
-        }  
+        } 
+        .darktheme {
+          border: none;
+          margin-right: 10px;
+        }
+        .lighttheme {
+          border: none;
+          margin-right: 10px;
+        }
 
         .swiper .swiper-button-prev {
           display: none;
@@ -154,6 +174,55 @@
     .n79 {
       font-size: 25px;
     }
+    /* from mission html */
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .service {
+      width: 30rem;
+      background: #fcfcfc;
+      padding: 30px;
+      height: 44rem;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 20px -15px #030380;
+      transition: transform 0.8s;
+    }
+    .service2 {
+      width: 30rem;
+      background: #fcfcfc;
+      padding: 30px;
+      height: 44rem;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 20px -15px #030380;
+      transition: transform 0.8s;
+    }
+    .service2 li {
+      line-height: 2px;
+    }
+    .main .shadowOne {
+      width: 20rem;
+    }
+    .main .shadowTwo {
+      width: 15rem;
+    }
+    .main2 .shadowOne{
+      width: 20rem;
+    }
+    .main2 .shadowTwo {
+      width: 15rem; 
+    }
+   
+
+
+    /* end mission html */
     
     .block-999 {
         width: 400px;
@@ -215,6 +284,73 @@
     }
   } 
 
+  @media screen and (max-width:500px) { 
+     /* from mission html */
+     .row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .service {
+      width: 25rem;
+      background: #fcfcfc;
+      padding: 30px;
+      height: 44rem;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 20px -15px #030380;
+      
+    }
+    /* .mission p {
+      background-color: #fcfcfc;
+      border-radius: 10px;
+      width: 23.5rem;
+  
+    } */
+    .col-md-4 {
+      margin-bottom: 400px;
+     }
+    .service2 {
+      width: 25rem;
+      background: #fcfcfc;
+      padding: 30px;
+      height: 44rem;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 20px -15px #030380;
+
+    }
+    .service2 li {
+      line-height: auto;
+      font-size: 15px;
+    }
+    .main .shadowOne {
+      display: none;
+    }
+    .main .shadowTwo {
+      display: none;
+    }
+    .main2 .shadowOne{
+      display: none;
+    }
+    .main2 .shadowTwo {
+     display: none; 
+    }
+    .main .service p {
+      line-height:40px;
+    }
+
+   
+
+
+    /* end mission html */
+  }
+
   @media screen and ( max-width: 420px) {
     .info {
       width: 270px;
@@ -244,7 +380,68 @@
       width: 300px;
     }
   }
-  @media screen and (max-width:390px) {
+  @media screen and (max-width:399px) {
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  .liiidiv{
+    height: 20rem;
+    background-color: #fcfcfc;
+    width: 20rem;
+    z-index: 22;
+    position: absolute;
+    left: 5px;
+    border-radius: 10px;
+  
+  }
+  .liiidiv li {
+    line-height: 20px;
+  }
+
+    .service {
+      width: 20rem;
+      background: #fcfcfc;
+      padding: 30px;
+      height: 44rem;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 20px -15px #030380;
+      transition: transform 0.8s;
+      
+    }
+
+    .col-md-4 {
+      margin-bottom: 400px;
+     }
+    .service2 {
+      width: 20rem;
+      background: #fcfcfc;
+      padding: 30px;
+      height: 44rem;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 20px -15px #030380;
+      transition: transform 0.8s;
+    }
+      /* .service2 p li {
+        line-height: auto;
+        font-size: 15px;
+        border-color: aliceblue;
+      } */
+    .col-md-4 {
+      height: 50rem;
+    }
+   
+    .service2  p   {
+      background-color: #fcfcfc;
+    }
+   /* end mission html */
      .info {
       width: 250px;
       margin-top: 10px;

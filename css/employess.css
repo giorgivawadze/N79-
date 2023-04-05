@@ -24,6 +24,19 @@
     margin-left: 80px;
 
   }
+  .ultag.active {
+    display: grid;
+    position: absolute;
+    width:80%;
+    top: 49px;
+    height: 250px;
+    /* left: 40%; */
+    text-align: center;
+    /* z-index: -1; */
+    transition: .6s;
+    gap: 20px;
+    background-color:  rgb(7, 28, 52);
+  }
   
   .dropdown-menu ul li a {
     padding-top: 5px;
@@ -76,6 +89,7 @@
   
   .cover {
     width: 100%;
+    margin-top: 140.3px;
   }
   
   /* section-direqcia */
@@ -144,6 +158,8 @@
   .teachers-section {
     width: 1200px;
     margin: 0 auto;
+    
+    
   }
   
   .math-section {
@@ -178,14 +194,14 @@
   
   .firstdivof-footer p {
     font-size: 22px;
-    color: #000;
+    color: #ffffff;
   }
   
   .flex-footer-999 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #3dd280;
+    background-color: #0d2a51;
   }
   
   .block-999 {
@@ -208,7 +224,7 @@
   
   .contact {
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
   }
   .contact h2 {
