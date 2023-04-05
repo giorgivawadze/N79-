@@ -675,14 +675,7 @@ ul li:hover .dropdown-menudark {
   padding-bottom: 10px;
   padding-top: 15px;
   font-family: "BPG Mrgvlovani Caps", sans-serif;   
-}
-.footerh2dark {
-  font-size: 20px;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  padding-top: 15px;
-  font-family: "BPG Mrgvlovani Caps", sans-serif; 
-  color: #fff;
+ color: #000;
 }
 .footerh22 {
   font-weight: bold;
