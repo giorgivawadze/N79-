@@ -24,8 +24,23 @@ toggleButton.addEventListener('click', () => {
 
 // darktheme
 
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-        
+   function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    
+    // Check if the user has set a theme preference before
+    if (localStorage.getItem("theme") === "dark") {
+      // If the preference was set to dark, remove it
+      localStorage.removeItem("theme");
+    } else {
+      // Otherwise, set the preference to dark
+      localStorage.setItem("theme", "dark");
     }
+  }
+  
+  // When the page loads, check if the user has set a theme preference before
+  if (localStorage.getItem("theme") === "dark") {
+    // If the preference was set to dark, enable the dark mode
+    document.body.classList.add("dark-mode");
+  }
+  

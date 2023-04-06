@@ -105,6 +105,9 @@
         .swiper .swiper-button-next {
           display: none;
         }
+        .col-md-4 {
+          margin-bottom: 400px;
+         }
 
 
      
@@ -206,6 +209,10 @@
     }
     .service2 li {
       line-height: 2px;
+    }
+    .mission-p {
+      background-color:#fcfcfc;
+      position: absolute;
     }
     .main .shadowOne {
       width: 20rem;

@@ -1,6 +1,114 @@
 body {
   font: sans-serif;
-  background-color: rgb(212, 212, 212);
+  background-color:#f4f4f3;
+  
+}
+.dark-mode {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+
+.dark-mode .maindi {
+  background-color: #222;
+}
+
+.dark-mode .headerspan {
+  color: #fff;
+}
+.dark-mode .dropdown-menu ul {
+  background-color: #222;
+}
+
+.dark-mode .ultag li a {
+  color: #fff;
+}
+
+.dark-mode .menu-bar {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode .menu-bar .ultag .dropdown-menu {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode .menu-bar .ultag .dropdown-menu-1 {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .menu-bar .ultag .dropdown-menu ul li  .dropdown-menu-2 {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode .flex-footer-999 {
+  background-color: #222;
+}
+
+.dark-mode .contact {
+  color: #fff;
+}
+
+.dark-mode .name22 {
+  color: #fff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .maindi {
@@ -238,7 +346,6 @@ header {
 }
 
 .service h4 {
-  background-color: white;
 
   text-align: center;
   font-family: "bpg mrgvlovani caps";
@@ -252,7 +359,6 @@ header {
 }
 
 .service2 h4 {
-  background-color: white;
   text-align: center;
   font-family: "bpg mrgvlovani caps";
 
@@ -311,8 +417,17 @@ header {
 
 .service .mission-p {
   line-height: 60px;
+  color: #000000;
 }
-
+.service2 li {
+  color: #000;
+}
+.service2 h4 {
+  color: #000;
+}
+.service h4 {
+  color: #000;
+}
 .main:hover .service {
   transform: translateY(-50px);
 }

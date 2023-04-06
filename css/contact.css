@@ -3,16 +3,158 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    font: sans-serif;
+    background-color:#f4f4f3;
+  }
+.dark-mode {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+.dark-mode .nomeri-1 {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.dark-mode .flex-mail p {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.dark-mode .maindi {
+  background-color: #222;
+}
+.dark-mode h1 {
+  color: #fff;
+}
+.dark-mode .flex-1 {
+  background-color: #182763;
+}
+.dark-mode .block p {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+}
+.dark-mode .bmulebi {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.dark-mode .headerspan {
+  color: #fff;
+}
+.dark-mode .dropdown-menu ul {
+  background-color: #222;
+}
+
+.dark-mode .ultag li a {
+  color: #fff;
+}
+
+.dark-mode .menu-bar {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode .menu-bar .ultag .dropdown-menu {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode .menu-bar .ultag .dropdown-menu-1 {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .menu-bar .ultag .dropdown-menu ul li  .dropdown-menu-2 {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode .flex-footer {
+  background-color: #222;
+}
+
+.dark-mode .contact {
+  color: #fff;
+}
+
+.dark-mode .name22 {
+  color: #fff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
   
   .maindi {
+      display: flex;
+      width: 100%;
+      background-color: rgb(15, 49, 90);
+      align-items: center;
+      gap: 20px;
+      font-family: "BPG Mrgvlovani Caps", sans-serif;   
+  }
+  .notmaindi {
     display: flex;
-    width: 100%;
-    background-color:rgb(15, 49, 90);
     align-items: center;
-    gap: 20px;
-  
-    /* color:; */
+    width: 100%;
+    justify-content: space-evenly;
   }
   .headerlogo {
     width: 90px;
@@ -106,14 +248,44 @@
   z-index: 999;
 }
 
-.dropdown-menu ul li:hover .dropdown-menu-1 {
+.menu-bar ul li:hover .dropdown-menu-1 {
   display: block;
   position: absolute;
-  top: 0;
-  left: 80px;
+  top: 100%;
+  /* left: 80px; */
   background-color: rgb(7, 28, 52);
   z-index: 999;
 }
+.dropdown-menu-1 ul li:hover {
+  background-color: rgb(110, 110, 110);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul li:hover .dropdown-menu-1 {
+  /* display: block;
+  position: absolute;
+  left: 25px;
+  height: 200px; */
+  background-color: rgb(7, 28, 52);
+  /* left: ; */
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 250px; 
+  height: 190px;
+  padding-top: 10px;
+  margin-top: 5px;
+
+  z-index: 999;
+}
+.u1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 27px;
+}
+
 
 .dropdown-menu ul li a {
   padding-top: 5px;
@@ -189,14 +361,16 @@
   
   .nomeri {
     font-size: 30px;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
     margin-bottom: 10px;
+
   }
   
   .nomeri-1 {
     font-size: 30px;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
+    color: #000;
   }
   
   h2 {
@@ -269,6 +443,7 @@
   .block p {
     font-size: 22px;
     color: black;
+    font-family: "BPG Mrgvlovani Caps", sans-serif;   
   }
   
   .flex-bmuli {

@@ -4,14 +4,16 @@ body {
   
 }
 .dark-mode {
-  background-color: black;
+  background-color: rgb(20, 20, 20);
   color: white;
 }
 
 .dark-mode .maindi {
   background-color: #222;
 }
-
+.service2 p {
+  color: #000;
+}
 .dark-mode .headerspan {
   color: #fff;
 }
@@ -136,12 +138,7 @@ header {
   z-index: 999;
 }
 
-.fa-moon {
-  font-size: 30px;
-}
-.moon {
-  color: #000;
-}
+
 .buttonmoon {
   border-radius: 50px;
   background-color: #454444;
@@ -257,6 +254,7 @@ header {
   display: flex;
   flex-direction: column;
   line-height: 27px;
+
 }
 .dropdown-menu2 {
   display: none;
@@ -332,27 +330,8 @@ header {
 
   z-index: 999;
 }
-ul li:hover .dropdown-menu-1dark {
-  /* display: block;
-  position: absolute;
-  left: 25px;
-  height: 200px; */
-  background-color:rgb(12, 12, 12) ; 
-  position: absolute;
-  top: 100%;
-  display: block;
-  width: 250px; 
-  height: 190px;
-  padding-top: 10px;
-  margin-top: 5px;
 
-  z-index: 99;
-}
-.dropdown-menu-1dark {
-  display: none;
-  z-index: 99;
-}
-.dropdown-menudark ul li:hover .dropdown-menu-2dark {
+/* .dropdown-menudark ul li:hover .dropdown-menu-2dark {
   background-color:rgb(12, 12, 12) ; 
   display: block;
   position: absolute;
@@ -366,7 +345,7 @@ ul li:hover .dropdown-menu-1dark {
   display: none;
   z-index: 100;
 }
-
+ */
 
 .dropdown-menu ul li a {
   padding-top: 5px;
@@ -395,23 +374,6 @@ ul li:hover .dropdown-menu-1dark {
   /* text-align: center; */
 
 }
-ul li:hover .dropdown-menudark {
-  background-color:rgb(12, 12, 12); 
-  position: absolute;
-  top: 100%;
-  display: block;
-  width: 200px; 
-  padding-top: 10px;
-  margin-top: 5px;
-  left: 0;
-  height: 170px;
-  line-height: 30px;
-}
-.dropdown-menudark {
-  display: none;
-  z-index: 99;
-}
-
 
 .dropdown-menu ul li {
   margin-bottom: 10px;
@@ -433,21 +395,6 @@ ul li:hover .dropdown-menudark {
 }
 
 
-.dropdown-menudark ul li:hover {
-  background-color: rgb(110, 110, 110);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-.dropdown-menu-1dark ul li:hover {
-  background-color: rgb(110, 110, 110);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 
 
