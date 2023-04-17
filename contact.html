@@ -5,86 +5,107 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="resetcnt.css">
+  <title>79 საჯარო სკოლა</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/trustees_board.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-mrgvlovani-caps/css/bpg-mrgvlovani-caps.min.css">
-  <link rel="icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="img/icon.webp">
+  <script src="https://kit.fontawesome.com/01d47107f9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="maindi ">
-      <img class="headerlogo" src="img/icon.png" alt="ICON">
-      
+      <img class="headerlogo" src="img/icon.webp" alt="ICON">
+
       <div class="notmaindi">
-      <span class="headerspan"> სსიპ ქალაქ თბილისის  <span class="n79"> N79 </span> საჯარო სკოლა</span>
-     <label class="switch">
-        <input onclick="myFunction()" type="checkbox">
-        <span class="slider round"></span>
-      </label>  
-  
-  
-     </div>
+        <span class="headerspan"> სსიპ ქალაქ თბილისის <span class="n79"> N79 </span> საჯარო სკოლა</span>
+
+        <div class="wrap">
+          <form action="" method="POST">
+            <div id="checkbox-container">
+              <label class="switch">
+                <input id="name" onclick="myFunction3()" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
     </div>
-  
-  
+
+
     <div class="menu-bar">
       <ul class="ultag">
         <li><a href="index.html">მთავარი</a></li>
-        <li>
-          <a href="#">ჩვენს შესახებ <i class="fas fa-caret-down"></i></a>
-  
-          <div class="dropdown-menu">
-            <ul class="ulti">
-              <li><a href="mission.html" class="fontsize">სკოლის მისია</a></li>
-              <li><a href="#" class="fontsize">შინაგანაწესი</a></li>
-              <li><a href="#" class="fontsize">სასწავლო გეგმა <i class="fas fa-caret-right"></i> </a>
-                <div class="dropdown-menu-2">
-                 <ul class="u2">
-                 <li><a href="#" class="fontsize">გეგმა 2022/2023</a></li>
-                 </ul>
-  
-                </div>
-              
-              
-              
-              </li>
-              <li><a href="#" class="fontsize">ადმინისტრაცია </a>  </li>
-              <li><a href="gallery.html" class="fontsize">გალერეა</a></li>
-  
-            </ul>
-          </div>
-          </li>
-          <li class="litaag"><a href="#">სკოლის სტრუქტურა   <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown-menu-1">
-               <ul class="u1">
-                <li><a href="#" class="fontsize f4">სამეურვეო საბჭო</a></li>
-               <li><a href="#" class="fontsize f1">დირექცია</a></li>
-               <li><a href="employees.html" class="fontsize f3">პედაგოგიური საბჭო</a></li>
-               <li><a href="#" class="fontsize f2">მოსწავლეთა თვითმართველობა</a></li>
-               <li><a href="#" class="fontsize f5">დისციპლინური კომიტეტი</a></li>
-               </ul>
-  
+        <div class="dropdown">
+          <button onclick="myFunction10()" class="dropbtn"><span>ჩვენს შესახებ</span><i
+              class="fa-solid fa-caret-down"></i></button>
+
+          <div id="myDropdown" class="dropdown-content">
+            <li class="margin-li"><a href="mission.html" class="fontsize f4">სკოლის ფილოსოფია</a></li>
+            <div class="dropdown">
+              <button onclick="myFunction2()" class="dropbtn2"><span class="btnspan">სკოლის სტრუქტურა</span>
+                <i class="fa-solid fa-caret-right"></i></button>
+              <div id="myDropdown2" class="dropdown-content2">
+                <li><a href="trustees_board.html" class="fontsize f4">სამეურვეო საბჭო</a></li>
+                <li><a href="direction.html" class="fontsize f1">დირექცია</a></li>
+                <li><a href="employees.html" class="fontsize f3">პედაგოგიური საბჭო</a></li>
+                <li><a href="self-governance.html" class="fontsize f2">მოსწავლეთა თვითმართველობა</a></li>
+                <li><a href="disc.html" class="fontsize f5">დისციპლინური კომიტეტი</a></li>
+              </div>
             </div>
-          </li>
-        <li><a href="#">სიახლეები</a></li>
-        <li><a href="#">წრეები</a></li>
-        <li><a href="contact.html">კონტაქტი</a></li>
-      </ul> 
-      
-  
+            <li class="margin-li"><a
+                href="https://emis188-my.sharepoint.com/:w:/g/personal/gurtsishvili_luka_students_gov_ge/EbdkuBAmN1JLku3PmfcHU6kBSUfoMDMKYRGIzRaT4HpsTg?e=fcpjov"
+                class="fontsize f3">შინაგანაწესი</a></li>
+            <li class="margin-li"><a href="admins.html" class="fontsize f2">ადმინისტრაცია</a></li>
+            <li class="margin-li"><a href="Financial.html" class="fontsize f5">ფინანსური და სხვა ანგარიშები</a></li>
+            <li class="margin-li"><a href="gallery.html" class="fontsize f5">გალერეა</a></li>
+          </div>
+        </div>
+        <li><a href="projects.html">პროგრამები/პროექტები</a></li>
+        <div class="dropdown">
+          <button onclick="myFunction4()" class="dropbtn3"><span>სწავლა სწავლება</span><i
+              class="fa-solid fa-caret-down"></i></button>
+          <div id="myDropdown3" class="dropdown-content3">
+            <div class="dropdown">
+              <button onclick="myFunction5()" class="dropbtn4"><span class="btnspan">სასკოლო სასწავლო გეგმა</span>
+                <i class="fa-solid fa-caret-right"></i></button>
+              <div id="myDropdown4" class="dropdown-content4">
+                <li><a href="#" class="fontsize f4">(განახლების პროცესშია)</a></li>
+              </div>
+            </div>
+            <li class="margin-li"><a href="rule.html" class="fontsize f4">მოსწავლეთა მიღების წესი</a></li>
+            <li class="margin-li"><a href="mechanicm.html" class="fontsize f4">გასაჩივრების მექანიზმები</a></li>
+          </div>
+          </div>
+          <li><a href="service.html">დამატებითი მომსახურება</a></li>
+          <li><a href="news.html">სიახლეები</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+      </ul>
+     
+
+
+
       <div class="burger">
         <div id="line1" class="line "></div>
         <div id="line2" class="line "></div>
         <div id="line3" class="line "></div>
-        
-       </div> 
-  
+
+      </div>
+
     </div>
-    </header>
+  </header>
 
 
   <section>
@@ -98,7 +119,9 @@
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
         </svg>
-        <a href=tel: 224 74 64 class="nomeri-1"><p class="nomeri-1">224 74 64</p></a>
+        <a href=tel: 224 74 64 class="nomeri-1">
+          <p class="nomeri-1">224 74 64</p>
+        </a>
       </div>
 
       <div class="flex-1">
@@ -110,11 +133,8 @@
         </svg>
 
         <div class="flex-fb">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-            <path
-              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
-            </path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"></svg>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
           <a href="https://www.facebook.com/skola79" target="_blank">FACEBOOK</a>
         </div>
 
@@ -124,7 +144,9 @@
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
           </svg>
-          <a href=mailto: tbilisi79@mes.gov.ge> <p>tbilisi79@mes.gov.ge</p></a>
+          <a href=mailto: tbilisi79@mes.gov.ge>
+            <p>tbilisi79@mes.gov.ge</p>
+          </a>
         </div>
       </div>
 
@@ -150,7 +172,7 @@
 
     <div class="flex-footer">
       <div class="block">
-        <img src="img/icon.png" alt="logo" class="logo">
+        <img src="img/icon.webp" alt="logo" class="logo">
         <p>ქალაქ თბილისის №79 საჯარო სკოლა</p>
         <p>copyright &copy</p>
       </div>
@@ -159,44 +181,55 @@
         <p class="bmulebi">სასარგებლო ბმულები</p>
         <div>
           <a href="https://mes.gov.ge/" target="_blank">
-            <img src="img/M.png" alt="" class="mes">
+            <img src="img/M.webp" alt="" class="mes">
           </a>
         </div>
 
         <div class="links">
 
           <a href="https://www.naec.ge/#/ge/index" target="_blank">
-            <img class="logo-9" src="img/N.png " alt="">
+            <img class="logo-9" src="img/N.webp " alt="">
           </a>
 
           <a href="https://www.emis.ge/" target="_blank">
-            <img class="logo-9" src="img/Logo.png" alt=" ">
+            <img class="logo-9" src="img/Logo.webp" alt=" ">
           </a>
 
           <a href="https://rustaveli.org.ge/" target="_blank">
-            <img class="rustavel logo-9  lo9" src="img/rustavel.png" alt="">
+            <img class="rustavel logo-9  lo9" src="img/rustavel.webp" alt="">
           </a>
 
         </div>
 
         <div class="links-2">
           <a href="http://www.tpdc.ge/geo/" target="_blank">
-            <img class="logo-9 maswavlebel" src="img/maswavlebel.png" alt="">
+            <img class="logo-9 maswavlebel" src="img/maswavlebel.webp" alt="">
           </a>
 
           <a href="https://eqe.ge/ka" target="_blank">
-            <img class="logo-9" src="img/eqe.png" alt="">
+            <img class="logo-9" src="img/eqe.webp" alt="">
           </a>
           <a href="http://mandaturi.gov.ge/" target="_blank">
-            <img class="mandatur logo-9" src="img/ma.png" alt="">
+            <img class="mandatur logo-9" src="img/ma.webp" alt="">
           </a>
         </div>
       </div>
     </div>
   </footer>
+  <div class="minfoot">
+    <span>&copy; Copyright 2023</span>
+    <span>Created By:</span>
+    <div class="minfootminfooter">
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100036127967765">N.K</a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100090840501131">G.V</a>
+      <a target="_blank" href="https://www.facebook.com/luka.gurwishvili">L.G</a>
+    </div>
+  </div>
+
   <script src="burger.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 
 </html>

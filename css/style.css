@@ -1,48 +1,64 @@
 body {
   font: sans-serif;
-  background-color:#f4f4f3;
-  
+  background-color: #f4f4f3;
 }
 .dark-mode {
+  transition: 0.3s;
   background-color: rgb(20, 20, 20);
   color: white;
 }
 
 .dark-mode .maindi {
+  transition: 0.3s;
   background-color: #222;
 }
 .service2 p {
   color: #000;
 }
+
 .dark-mode .headerspan {
   color: #fff;
-}
-.dark-mode .dropdown-menu ul {
-  background-color: #222;
 }
 
 .dark-mode .ultag li a {
   color: #fff;
 }
+.ultag.active{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(7, 28, 52);
+  top: 10%;
+  width: 80%;
+  height: 260px;
+  padding: 20px;
+
+}
+
+.ultag2.active li  {
+  padding-bottom: 20px;
+}
+.dark-mode .ultag.active {
+  transition: 0.3s;
+  background-color: #222;
+}
+.dark-mode .ultag2.active li  {
+  padding-bottom: 20px;
+}
+.dark-mode .ultag2.active {
+  transition: 0.3s;
+  background-color: #222; 
+  height: 10px;
+}
 
 .dark-mode .menu-bar {
-  background-color: #222;
-  color: #fff;
-}
-.dark-mode .menu-bar .ultag .dropdown-menu {
-  background-color: #222;
-  color: #fff;
-}
-.dark-mode .menu-bar .ultag .dropdown-menu-1 {
+  transition: 0.3s;
   background-color: #222;
   color: #fff;
 }
 
-.dark-mode .menu-bar .ultag .dropdown-menu ul li  .dropdown-menu-2 {
-  background-color: #222;
-  color: #fff;
-}
 .dark-mode .flex-footer-999 {
+  transition: 0.3s;
   background-color: #222;
 }
 
@@ -52,6 +68,47 @@ body {
 
 .dark-mode .name22 {
   color: #fff;
+}
+
+.dark-mode .dropdown-content {
+  transition: 0.3s;
+  background-color: #222;
+}
+
+.dark-mode .dropdown-content2 {
+  transition: 0.3s;
+  background-color: #222;
+}
+
+.dark-mode .dropdown-content3 {
+  transition: 0.3s;
+  background-color: #222;
+}
+
+.dark-mode .dropdown-content4 {
+  transition: 0.3s;
+  background-color: #222;
+}
+
+.dark-mode .dropbtn2:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.dark-mode .dropbtn4:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.dark-mode .dropdown-content a:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+/* Change color of dropdown links on hover */
+.dark-mode .dropdown-content3 a:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.dark-mode .dropdown-content4 a:hover {
+  background-color: rgb(17, 17, 17);
 }
 
 .switch {
@@ -90,7 +147,6 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 input:checked + .slider {
   background-color: #000000;
 }
@@ -113,14 +169,222 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* dropdownmenu */
+.dropbtn {
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+}
+
+.dropbtn2 {
+  padding: 8px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+}
+
+.dropbtn3 {
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+}
+
+.dropbtn4 {
+  margin-bottom: 5px;
+  padding: 8px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+}
+
+.dropbtn2 {
+  margin-bottom: 10px;
+}
+
+.dropbtn4 span {
+  font-size: 12px;
+}
+
+.dropbtn span {
+  margin-right: 5px;
+  font-size: 19px;
+}
+
+.dropbtn3 span {
+  font-size: 19px;
+  margin-right: 5px;
+}
+
+.dropbtn2:hover {
+  background-color: rgb(15, 49, 90);
+}
+
+.dropbtn4:hover {
+  background-color: rgb(15, 49, 90);
+}
+
+/* Dropdown button on hover & focus */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  height: 270px;
+  display: none;
+  position: absolute;
+  background-color: rgb(7, 28, 52);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 {
+  margin-left: 12.5rem;
+  margin-top: -3.2rem;
+  height: 228px;
+  display: none;
+  position: absolute;
+  
+  background-color: rgb(7, 28, 52);
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content3 {
+  height: 165px;
+  display: none;
+  position: absolute;
+  background-color: rgb(7, 28, 52);
+  min-width: 230px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content4 {
+  justify-content: center;
+  margin-left: 14.4rem;
+  margin-top: -2.8rem;
+  display: none;
+  height: 40px;
+  position: absolute;
+  background-color: rgb(7, 28, 52);
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.margin-li {
+  margin-bottom: 10px;  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content3 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content4 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(15, 49, 90);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content3 a:hover {
+  background-color: rgb(15, 49, 90);
+}
+
+.dropdown-content4 a:hover {
+  background-color: rgb(15, 49, 90);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.ultag {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+  position: relative;
+}
+
+
+.ultag2 {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fontsize {
+  font-size: 13px;
+  font-weight: 200;
+  height: 100%;
+  width: 100%;
+  font-family: "bpg mrgvlovani caps" Georgia, "Times New Roman", Times, serif;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
 .maindi {
   display: flex;
   width: 100%;
   background-color: rgb(15, 49, 90);
   align-items: center;
   gap: 20px;
-  font-family: "BPG Mrgvlovani Caps", sans-serif;   
-
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
 }
 
 .notmaindi {
@@ -138,7 +402,6 @@ header {
   z-index: 999;
 }
 
-
 .buttonmoon {
   border-radius: 50px;
   background-color: #454444;
@@ -147,27 +410,21 @@ header {
   cursor: pointer;
 }
 
-
-
-.headerlogo{
+.headerlogo {
   width: 90px;
   height: 90px;
   border-radius: 50px;
   margin-left: 90px;
-
 }
 .n79 {
   font-size: 30px;
   color: rgb(255, 255, 255);
-  font-family: "BPG Mrgvlovani Caps", sans-serif; 
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
   font-weight: bold;
-  
-
 }
 .headerspan {
   font-size: 24px;
-  color: rgb(255, 255, 255) ;
-
+  color: rgb(255, 255, 255);
 }
 
 .menu-bar {
@@ -175,28 +432,22 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  font-size: 20px ;
+  font-size: 20px;
   width: 100%;
-  font-family: "BPG Mrgvlovani Caps", sans-serif; 
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
   position: relative;
-
-
 }
-  
-
-
-
 
 .line {
   transition: transform 0.3s ease;
   border-radius: 10px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .line::before,
 .line::after {
-  content: '';
-  position:absolute;
-  transition: all .5s ease-in-out;
+  content: "";
+  position: absolute;
+  transition: all 0.5s ease-in-out;
 }
 .line::before {
   transform: translateY(-16px);
@@ -209,7 +460,7 @@ header {
   transform: translateY(1px);
 }
 .burger.open #line1 {
- transform: translateY(1px) rotate(-45deg);
+  transform: translateY(1px) rotate(-45deg);
 }
 .burger.open #line2 {
   transform: translateY(-5px) rotate(45deg);
@@ -218,19 +469,14 @@ header {
   display: none;
 }
 
-
-
-
 /* ANIMATION-END */
 .burger {
   display: none;
   cursor: pointer;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 200px;
   position: absolute;
   left: 85%;
-  
-
 }
 
 .burger div {
@@ -240,28 +486,14 @@ header {
   margin: 2px;
 }
 
-
-
-
-.ultag {
-  display: flex;
-  align-items: center; 
-  margin-left: 80px;
-  
-}
-
 .u1 {
   display: flex;
   flex-direction: column;
   line-height: 27px;
+}
 
-}
-.dropdown-menu2 {
-  display: none;
-  z-index: 100;
-}
 .fas {
-  float:right;
+  float: right;
   margin-left: 10px;
 }
 .fa-caret-right {
@@ -270,148 +502,26 @@ header {
   margin-right: 10px;
 }
 
-.ultag.active {
-  display: grid;
-  position: absolute;
-  width:80%;
-  top: 49px;
-  height: 250px;
-  /* left: 40%; */
-  text-align: center;
-  /* z-index: -1; */
-  transition: .6s;
-  gap: 20px;
-  background-color:  rgb(7, 28, 52);
-}
-
-
-.dropdown-menu-1 {
-  display: none;
-}
-.dropdown-menu-2 {
-  display: none;
-}
-.dropdown-menu-3 {
-  display: none;
-}
-.dropdown-menu ul li:hover .dropdown-menu-3 {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 80px;
-  background-color: rgb(7, 28, 52);
-  width: 90%;
-  z-index: 999;
-}
-.dropdown-menu ul li:hover .dropdown-menu-2{
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 80px;
-  background-color: rgb(7, 28, 52);
-  width: 90%;
-  z-index: 999;
-}
-
- ul li:hover .dropdown-menu-1 {
-  /* display: block;
-  position: absolute;
-  left: 25px;
-  height: 200px; */
-  background-color: rgb(7, 28, 52);
-  /* left: ; */
-  position: absolute;
-  top: 100%;
-  display: block;
-  width: 250px; 
-  height: 190px;
-  padding-top: 10px;
-  margin-top: 5px;
-
-  z-index: 999;
-}
-
-/* .dropdown-menudark ul li:hover .dropdown-menu-2dark {
-  background-color:rgb(12, 12, 12) ; 
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 80px;
-  width: 90%;
-  z-index: 999;
-
-}
-.dropdown-menu-2dark {
-  display: none;
-  z-index: 100;
-}
- */
-
-.dropdown-menu ul li a {
-  padding-top: 5px;
-
-
-}
 .menu-bar ul li {
   position: relative;
-  padding-left: 20px;
 }
 .menu-bar ul li a {
   color: white;
-  padding: 5px;
+  padding: 10px;
   align-items: center;
-
+  font-size: 14px;
 }
-
-.menu-bar ul li:hover .dropdown-menu {
-  background-color: rgb(7, 28, 52);
-  left: 0;
-  position: absolute;
-  top: 100%;
-  display: block;
-  width: 200px; 
-  margin-top: 5px;
-  /* text-align: center; */
-
+.dropbtn3 span {
+  font-size: 14px;
 }
-
-.dropdown-menu ul li {
-  margin-bottom: 10px;
+.dropbtn span {
+  font-size: 14px;
 }
-.dropdown-menu ul li:hover {
-  background-color: rgb(110, 110, 110);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-.dropdown-menu-1 ul li:hover {
-  background-color: rgb(110, 110, 110);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-
 
 .menu-bar ul li a :last-child {
   padding: 0;
 }
-.dropdown-menu {
-  display: none;
-  z-index: 99;
-}
-.fontsize {
-  font-size: 0.74rem !important;
-  font-weight: bold;
-  width: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 /* Slider */
 
 .swiper {
@@ -422,21 +532,55 @@ header {
 .swiper-slide img {
   width: 100%;
   height: 500px;
-  cursor:move;
+  cursor: pointer;
 }
 .swiper-slide {
   position: relative;
   text-align: center;
- 
 }
-.prev {
-  background-color: #0b0334;
+/* .prev {
   border-radius: 4px;
 }
 .next {
-  background-color:  #0b0334;
   border-radius: 4px;
+} */
+.swiperbtn1 {
+  background-color: #0d0c3f;
+  width: 150px;
+  position: absolute;
+  height: 40px;
+  right: 70%;
+  display: flex;
+  z-index: 60;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
+
+.swiperbtn2 {
+  position: absolute;
+  left: 70%;
+  width: 150px;
+  height: 40px;
+  z-index: 60;
+  background-color: #0d0c3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.swiperprev {
+  color: #fff;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+
+
+}
+.swipernext {
+  color: #fff;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+
+}
+
 
 .divofdiv79 {
   position: absolute;
@@ -444,21 +588,17 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: all-scroll;
-  
+  cursor: pointer;
 }
 .div79 {
   justify-content: center;
   align-items: center;
   font-size: 66px;
-  font-family: "BPG Mrgvlovani Caps", sans-serif;   
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
   font-weight: bold;
-  text-shadow: 2px  1px 4px #fff;
+  text-shadow: 2px 1px 4px #fff;
   font-style: italic;
-  color: rgb(7, 3, 26) ;
-
-
-
+  color: rgb(7, 3, 26);
 }
 .span79e {
   color: rgb(15, 49, 90);
@@ -471,13 +611,11 @@ header {
   align-items: center;
 }
 
-
 .container {
   height: 500px;
   margin-top: 140px;
   margin-bottom: 20px;
 }
-
 
 /* miniinfo */
 .info {
@@ -487,7 +625,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
-
 }
 .nameofschool {
   font-weight: 900;
@@ -501,13 +638,13 @@ header {
 }
 .divofspanss {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin-top: 50px;
 }
 .text {
   font-family: sans-serif;
   font-weight: 600;
-  line-height: 25px; 
+  line-height: 25px;
 }
 .textdark {
   font-family: sans-serif;
@@ -515,7 +652,7 @@ header {
   line-height: 25px;
   color: #fff;
 }
-.mintext{
+.mintext {
   margin-left: 20px;
 }
 .minitext {
@@ -542,18 +679,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color:rgb(15, 49, 90);
+  background-color: rgb(17, 74, 145);
   width: 100%;
-
-
 }
 .flex-footer-999dark {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color:rgb(12, 12, 12);
+  background-color: rgb(12, 12, 12);
   width: 100%;
-
 }
 
 .block-999 {
@@ -572,9 +706,7 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
-  
 }
-
 
 .logo-links-9999 {
   display: flex;
@@ -588,11 +720,10 @@ header {
   width: 200px;
   color: rgb(255, 255, 255);
   font-size: 20px;
-  font-family: "BPG Mrgvlovani Caps", sans-serif;     
- 
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
 }
 .name22 {
-  font-family: "BPG Mrgvlovani Caps", sans-serif;   
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
   /* font-size: 20px; */
 }
 .contact h2 {
@@ -621,8 +752,8 @@ header {
   font-weight: bolder;
   padding-bottom: 10px;
   padding-top: 15px;
-  font-family: "BPG Mrgvlovani Caps", sans-serif;   
- color: #000;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+  color: #000;
 }
 .footerh22 {
   font-weight: bold;
@@ -632,10 +763,33 @@ header {
   font-size: 19px;
   font-weight: 500;
 }
+/* minifooter */
 
 
-
-
-
-
-
+.minfoot {
+  background-color: #0d0c3f;
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  align-items: center;
+  
+}
+.dark-mode .minfoot {
+  background-color: #202020;
+  transition: .3s linear;
+}
+.minfootminfooter {
+  display: flex;
+  margin-top: 10px;
+  width: 9rem;
+  justify-content: space-between;
+}
+.minfoot span {
+  color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 5px;
+}
+.minfootminfooter a {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}

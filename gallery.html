@@ -5,216 +5,346 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>79 საჯარო სკოლა</title>
+  <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/gallery.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-mrgvlovani-caps/css/bpg-mrgvlovani-caps.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="img/icon.png">
+  <link rel="icon" href="img/icon.webp">
+  <script src="https://kit.fontawesome.com/01d47107f9.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <body class="lightbody">
-    <header>
-    <div class="maindi">
-      <img class="headerlogo" src="img/icon.png" alt="ICON">
-      
+  <header>
+    <div class="maindi ">
+      <img class="headerlogo" src="img/icon.webp" alt="ICON">
+
       <div class="notmaindi">
-      <span class="headerspan"> სსიპ ქალაქ თბილისის  <span class="n79"> N79 </span> საჯარო სკოლა</span>
-      <div class="darktheme"> <a class="moon" href="indexdark.html"><i class="fa-regular fa-moon"></i></a></div>   
-  
-  
-     </div>
-    </div>
-  
-  
-    <div class="menu-bar">
-      <ul class="ultag ">
-        <li><a href="index.html">მთავარი</a></li>
-        <li>
-          <a href="#">ჩვენს შესახებ <i class="fas fa-caret-down"></i></a>
-  
-          <div class="dropdown-menu">
-            <ul class="ulti">
-              <li><a href="mission.html" class="fontsize">სკოლის მისია</a></li>
-              <li><a href="#" class="fontsize">შინაგანაწესი</a></li>
-              <li><a href="#" class="fontsize">სასწავლო გეგმა <i class="fas fa-caret-right"></i> </a>
-                <div class="dropdown-menu-2">
-                 <ul class="u2">
-                 <li><a href="#" class="fontsize">გეგმა 2022/2023</a></li>
-                 </ul>
-  
-                </div>
-              
-              
-              
-              </li>
-              <li><a href="employees.html" class="fontsize">ადმინისტრაცია </a>  </li>
-              <li><a href="gallery.html" class="fontsize">გალერეა</a></li>
-  
-            </ul>
-          </div>
-          </li>
-          <li class="litaag"><a href="#">სკოლის სტრუქტურა   <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown-menu-1">
-               <ul class="u1">
-               <li><a href="#" class="fontsize f1">დირექცია</a></li>
-               <li><a href="#" class="fontsize f2">მოსწავლეთა თვითმართველობა</a></li>
-               <li><a href="#" class="fontsize f3">პედაგოგიური საბჭო</a></li>
-               <li><a href="#" class="fontsize f4">სამეურვეო საბჭო</a></li>
-               <li><a href="#" class="fontsize f5">დისციპლინური კომიტეტი</a></li>
-               </ul>
-  
+        <span class="headerspan"> სსიპ ქალაქ თბილისის <span class="n79"> N79 </span> საჯარო სკოლა</span>
+
+        <div class="wrap">
+          <form action="" method="POST">
+            <div id="checkbox-container">
+              <label class="switch">
+                <input id="name" onclick="myFunction3()" type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
-          </li>
-        <li><a href="#">სიახლეები</a></li>
-        <li><a href="#">წრეები</a></li>
-        <li><a href="contact.html">კონტაქტი</a></li>
-      </ul> 
-      
-  
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="menu-bar">
+      <ul class="ultag">
+        <li><a href="index.html">მთავარი</a></li>
+        <div class="dropdown">
+          <button onclick="myFunction10()" class="dropbtn"><span>ჩვენს შესახებ</span><i
+              class="fa-solid fa-caret-down"></i></button>
+
+          <div id="myDropdown" class="dropdown-content">
+            <li class="margin-li"><a href="mission.html" class="fontsize f4">სკოლის ფილოსოფია</a></li>
+            <div class="dropdown">
+              <button onclick="myFunction2()" class="dropbtn2"><span class="btnspan">სკოლის სტრუქტურა</span>
+                <i class="fa-solid fa-caret-right"></i></button>
+              <div id="myDropdown2" class="dropdown-content2">
+                <li><a href="trustees_board.html" class="fontsize f4">სამეურვეო საბჭო</a></li>
+                <li><a href="direction.html" class="fontsize f1">დირექცია</a></li>
+                <li><a href="employees.html" class="fontsize f3">პედაგოგიური საბჭო</a></li>
+                <li><a href="self-governance.html" class="fontsize f2">მოსწავლეთა თვითმართველობა</a></li>
+                <li><a href="disc.html" class="fontsize f5">დისციპლინური კომიტეტი</a></li>
+              </div>
+            </div>
+            <li class="margin-li"><a
+                href="https://emis188-my.sharepoint.com/:w:/g/personal/gurtsishvili_luka_students_gov_ge/EbdkuBAmN1JLku3PmfcHU6kBSUfoMDMKYRGIzRaT4HpsTg?e=fcpjov"
+                class="fontsize f3">შინაგანაწესი</a></li>
+            <li class="margin-li"><a href="admins.html" class="fontsize f2">ადმინისტრაცია</a></li>
+            <li class="margin-li"><a href="Financial.html" class="fontsize f5">ფინანსური და სხვა ანგარიშები</a></li>
+            <li class="margin-li"><a href="gallery.html" class="fontsize f5">გალერეა</a></li>
+          </div>
+        </div>
+        <li><a href="projects.html">პროგრამები/პროექტები</a></li>
+        <div class="dropdown">
+          <button onclick="myFunction4()" class="dropbtn3"><span>სწავლა სწავლება</span><i
+              class="fa-solid fa-caret-down"></i></button>
+          <div id="myDropdown3" class="dropdown-content3">
+            <div class="dropdown">
+              <button onclick="myFunction5()" class="dropbtn4"><span class="btnspan">სასკოლო სასწავლო გეგმა</span>
+                <i class="fa-solid fa-caret-right"></i></button>
+              <div id="myDropdown4" class="dropdown-content4">
+                <li><a href="#" class="fontsize f4">(განახლების პროცესშია)</a></li>
+              </div>
+            </div>
+            <li class="margin-li"><a href="rule.html" class="fontsize f4">მოსწავლეთა მიღების წესი</a></li>
+            <li class="margin-li"><a href="mechanicm.html" class="fontsize f4">გასაჩივრების მექანიზმები</a></li>
+          </div>
+          </div>
+          <li><a href="service.html">დამატებითი მომსახურება</a></li>
+          <li><a href="news.html">სიახლეები</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+      </ul>
+
+
       <div class="burger">
         <div id="line1" class="line "></div>
         <div id="line2" class="line "></div>
         <div id="line3" class="line "></div>
-        
-       </div> 
-  
+
+      </div>
+
     </div>
-    </header>
-    
+  </header>
 
-  <section class="images">
 
+
+
+  <div class="row">
     <h1>გალერეა</h1>
-    <hr>
-
-    <div class="gallery">
-      <a target="_blank" href="img/shemosasvleli.jpg">
-        <img src="img/shemosasvleli.jpg" alt="Cinque Terre" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/shemosasvleli.webp" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/foie.webp" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/shemosasvleli3.webp" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/17.webp" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
 
-    <div class="gallery">
-      <a target="_blank" href="img/foie.jpg">
-        <img src="img/foie.jpg" alt="Forest" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/8.webp" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/gallery" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
     </div>
 
-    <div class="gallery">
-      <a target="_blank" href="img/shemosasvleli3.jpg">
-        <img src="img/shemosasvleli3.jpg" alt="Northern Lights" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/4.webp" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
     </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/17.jpg">
-        <img src="img/17.jpg" alt="Mountains" width="600" height="400">
-      </a>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/8.jpg">
-        <img src="img/8.jpg" alt="Mountains" width="600" height="400">
-      </a>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/shemosasvleli2.jpg">
-        <img src="img/shemosasvleli2.jpg" alt="Mountains" width="600" height="400">
-      </a>
-    </div>
-
-    <hr>
-    <br>
-
-    <div class="gallery">
-      <a target="_blank" href="img/4.jpg">
-        <img src="img/4.jpg" alt="Mountains" width="600" height="400">
-      </a>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/336616633_1420946364976519_122600217689040260_n.jpg">
-        <img src="img/336616633_1420946364976519_122600217689040260_n.jpg" alt="Mountains" width="600" height="400">
-      </a>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/9.jpg">
-        <img src="img/9.jpg" alt="Mountains" width="600" height="400">
-      </a>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/10.jpg">
-        <img src="img/10.jpg" alt="Mountains" width="600" height="400">
-      </a>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/11.jpg">
-        <img src="img/11.jpg" alt="Mountains" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/336616633_1420946364976519_122600217689040260_n.webp" onclick="openModal();currentSlide(4)"
+        class="hover-shadow cursor">
     </div>
 
 
-    <div class="gallery">
-      <a target="_blank" href="img/5.jpg">
-        <img src="img/5.jpg" alt="Mountains" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/9.webp" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/11.webp" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/5.webp" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/19.webp" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
 
-    <hr>
-    <br>
 
-    <div class="gallery">
-      <a target="_blank" href="img/19.jpg">
-        <img src="img/19.jpg" alt="Mountains" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/20.webp" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </div>
-    <div class="gallery">
-      <a target="_blank" href="img/20.jpg">
-        <img src="img/20.jpg" alt="Mountains" width="600" height="400">
-      </a>
-
+    <div class="column">
+      <img src="img/21.webp" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
     </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/21.jpg">
-        <img src="img/21.jpg" alt="Mountains" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/bibliotekari.webp" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
     </div>
-    <div class="gallery">
-      <a target="_blank" href="img/bibliotekari.jpg">
-        <img src="img/bibliotekari.jpg" alt="Mountains" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/22.webp" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
 
-    <div class="gallery">
-      <a target="_blank" href="img/22.jpg">
-        <img src="img/22.jpg" alt="Mountains" width="600" height="400">
-      </a>
+
+    <div class="column">
+      <img src="img/23.webp" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/gallery2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/gallery3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/gallery4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
 
-    <div class="gallery">
-      <a target="_blank" href="img/23.jpg">
-        <img src="img/23.jpg" alt="Mountains" width="600" height="400">
-      </a>
+    <div class="column">
+      <img src="img/gallery5.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </div>
-    <hr>
+    <div class="column">
+      <img src="img/gallery6.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/gallery7.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 
-  </section>
+
+    </div>
+    <div class="column">
+      <img src="img/gallery8.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+      <img src="img/gallery9.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 25</div>
+          <img src="img/shemosasvleli.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 25</div>
+          <img src="img/foie.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 25</div>
+          <img src="img/shemosasvleli3.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 25</div>
+          <img src="img/17.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 25</div>
+          <img src="img/8.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 25</div>
+          <img src="img/gallery" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 25</div>
+          <img src="img/4.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 25</div>
+          <img src="img/336616633_1420946364976519_122600217689040260_n.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 25</div>
+          <img src="img/9.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 25</div>
+          <img src="img/11.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 25</div>
+          <img src="img/5.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 25</div>
+          <img src="img/19.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">13 / 25</div>
+          <img src="img/20.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">14 / 25</div>
+          <img src="img/21.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">15 / 25</div>
+          <img src="img/bibliotekari.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">16 / 25</div>
+          <img src="img/22.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">17 / 25</div>
+          <img src="img/23.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">18 / 25</div>
+          <img src="img/gallery2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">19 / 25</div>
+          <img src="img/gallery3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">20 / 25</div>
+          <img src="img/gallery4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">21 / 25</div>
+          <img src="img/gallery5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">22 / 25</div>
+          <img src="img/gallery6.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">23 / 25</div>
+          <img src="img/gallery7.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">24 / 25</div>
+          <img src="img/gallery8.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">25 / 25</div>
+          <img src="img/gallery9.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
 
 
 
-  <footer class="flex-footer-999" id="footer232">
+      </div>
+    </div>
+  </div>
+
+  <footer class="flex-footer-999">
     <div class="firstdivof-footer">
-      <img class="logo" src="img/icon.png" alt="logo">
+      <img class="logo" src="img/icon.webp" alt="logo">
       <p class="name22"> №79 საჯარო სკოლა</p>
     </div>
 
@@ -223,7 +353,7 @@
       <h2 class="footerh22">კონტაქტი</h2>
       <p>თბილისი, გლდანი, I მ/რ</p>
       <p>Gmail: tbilisi79@mes.gov.ge</p>
-      <p>ნომერი: 224 71 64</p>
+      <p class="nom">ნომერი: 225 71 64</p>
     </div>
 
     <div class="block-999">
@@ -231,23 +361,23 @@
       <h2 class="footerh2">სასარგებლო ბმულები</h2>
       <div>
         <a target="_blank" href="https://mes.gov.ge/index.php?lang=geo">
-          <img src="img/M.png" alt="logo" class="saqartvelo">
+          <img src="img/M.webp" alt="logo" class="saqartvelo">
         </a>
       </div>
 
       <div class="logo-links-999">
 
         <a target="_blank" href="https://www.naec.ge/#/ge/index">
-          <img class="logo-9" src="img/N.png" alt="logo">
+          <img class="logo-9" src="img/N.webp" alt="logo">
         </a>
 
         <a target="_blank" href="https://www.emis.ge/">
-          <img class="logo-9" src="img/Logo.png" alt="logo">
+          <img class="logo-9" src="img/Logo.webp" alt="logo">
         </a>
 
         <a target="_blank" href="https://rustaveli.org.ge/">
 
-          <img class="rustavel logo-9" src="img/rustavel.png" alt="logo">
+          <img class="rustavel logo-9" src="img/rustavel.webp" alt="logo">
         </a>
 
 
@@ -255,15 +385,15 @@
 
       <div class="logo-links-9999">
         <a target="_blank" href="http://mandaturi.gov.ge/">
-          <img class="mandatur logo-9" src="img/ma.png" alt="logo">
+          <img class="mandatur logo-9" src="img/ma.webp" alt="logo">
         </a>
 
         <a target="_blank" href="http://www.tpdc.ge/geo/">
-          <img class="logo-9 maswavlebel" src="img/maswavlebel.png" alt="logo">
+          <img class="logo-9 maswavlebel" src="img/maswavlebel.webp" alt="logo">
         </a>
 
         <a target="_blank" href="https://eqe.ge/ka">
-          <img class="logo-9" src="img/eqe.png" alt="logo">
+          <img class="logo-9" src="img/eqe.webp" alt="logo">
         </a>
       </div>
     </div>
@@ -271,11 +401,24 @@
 
 
   </footer>
+  <div class="minfoot">
+    <span>&copy; Copyright 2023</span>
+    <span>Created By:</span>
+    <div class="minfootminfooter">
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100090840501131">G.V</a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100036127967765">N.K</a>
+      <a target="_blank" href="https://www.facebook.com/luka.gurwishvili">L.G</a>
+    </div>
+  </div>
 
 
-  <script src="burger.js"></script>
+  <script defer src="burger.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="index.js"></script>
+  <script defer src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
 </body>
 
 </html>
