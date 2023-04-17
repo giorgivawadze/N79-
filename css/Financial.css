@@ -390,10 +390,15 @@ input:checked + .slider:before {
 .margin-li {
   background-color:rgb(7, 28, 52) ;
 }
+.dark-mode .margin-li {
+  background-color: #222;
+}
 .fontsize {
   background-color:rgb(7, 28, 52) ;
 }
-
+.dark-mode .fontsize {
+  background-color: #222;
+}
 
 .dropdown-content3 {
   height: 135px;

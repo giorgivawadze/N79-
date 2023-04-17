@@ -323,10 +323,15 @@ input:checked + .slider:before {
 .margin-li {
   background-color:rgb(7, 28, 52) ;
 }
+.dark-mode .margin-li {
+  background-color: #222;
+}
 .fontsize {
   background-color:rgb(7, 28, 52) ;
 }
-
+.dark-mode .fontsize {
+  background-color: #222;
+}
 .dropdown-content2 {
   margin-left: 12.5rem;
   margin-top: -3.2rem;
