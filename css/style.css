@@ -579,6 +579,14 @@ header {
   align-items: center;
   cursor: pointer;
 }
+.dark-mode .swiperbtn1 {
+  background-color: #222;
+  transition: .3s linear;
+}
+.dark-mode .swiperbtn2 {
+  background-color: #222;
+  transition: .3s linear;
+}
 .swiperprev {
   color: #fff;
   font-family: "BPG Mrgvlovani Caps", sans-serif;

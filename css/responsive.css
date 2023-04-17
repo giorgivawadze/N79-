@@ -617,7 +617,6 @@
   .row {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
   .swiper-slide img {
     width: 100%;
