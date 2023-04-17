@@ -378,6 +378,13 @@ input:checked + .slider:before {
   z-index: 1;
 }
 
+.margin-li {
+  background-color:rgb(7, 28, 52) ;
+}
+.fontsize {
+  background-color:rgb(7, 28, 52) ;
+}
+
 .dropdown-content2 {
   margin-left: 12.5rem;
   margin-top: -3.2rem;
