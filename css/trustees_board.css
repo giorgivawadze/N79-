@@ -52,32 +52,32 @@ body {
   color: #fff;
 }
 
-.dark-mode .info1 {
+.dark-mode .info11 {
   transition: 0.2s;
   background-color: #222;
 }
 
-.dark-mode .info1 ol li {
+.dark-mode .info11 ol li {
   color: rgb(255, 255, 255);
   transition: 0.2s;
 }
 
-.dark-mode .info1 h1 {
+.dark-mode .info11 h1 {
   transition: 0.2s;
   color: rgb(255, 255, 255);
 }
 
-.dark-mode .info2 {
+.dark-mode .info22 {
   transition: 0.2s;
   background-color: #222;
 }
 
-.dark-mode .info2 ol li {
+.dark-mode .info22 ol li {
   transition: 0.2s;
   color: rgb(255, 255, 255);
 }
 
-.dark-mode .info2 h1 {
+.dark-mode .info22 h1 {
   transition: 0.2s;
   color: rgb(255, 255, 255);
 }
@@ -96,6 +96,49 @@ body {
 .dark-mode .ultag li a {
   color: #fff;
 }
+
+
+/* added */
+
+
+.headerlogo {
+  padding: 7px;
+}
+.ultag {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dark-mode .forheader {
+  transition: 0.3s;
+  background-color: #222;
+}
+.active {
+  width: 100% !important;
+}
+.forheader {
+  display: flex;
+  background-color: rgb(15, 49, 90);
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.headerleft,
+.headerright,
+.headermid {
+  margin: auto 1.2rem !important;
+}
+
+
+
+
+
+
+
+/* end */
 
 .dark-mode .menu-bar {
   transition: 0.3s;
@@ -409,14 +452,9 @@ input:checked + .slider:before {
   font-size: 19px;
   display: flex;
   align-items: center;
-  margin-left: 80px;
 }
 
-.ultag2 {
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-}
+
 
 .fontsize {
   font-size: 13px;
@@ -444,7 +482,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 header {
@@ -485,12 +523,11 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  font-size: 20px;
   width: 100%;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
   position: relative;
+  justify-content: center;
 }
-
 .line {
   transition: transform 0.3s ease;
   border-radius: 10px;
@@ -700,10 +737,10 @@ header {
 
 }
 
-.info1 {
+.info11 {
   transition: 0.3s;
   border-radius: 10px;
-  width: 600px;
+  width: 40vw;
   height: 40rem;
   display: flex;
   justify-content: center;
@@ -713,23 +750,23 @@ header {
   box-shadow: 0 10px 26px -6px #777;
 }
 
-.info2 {
+.info22 {
   transition: 0.3s;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 26px -6px #777;
   border-radius: 10px;
-  width: 600px;
+  width: 40vw;  
   height: 40rem;
   display: flex;
   justify-content: center;
 }
 
-.info1:hover {
+.info11:hover {
   transform: translatey(-15px);
 }
 
-.info2:hover {
+.info22:hover {
   transform: translatey(-15px);
 }
 
@@ -771,10 +808,10 @@ header {
     display: block;
     position: relative;
   }
-  .info1 {
+  .info11 {
     width: 500px;
   }
-  .info2 {
+  .info22 {
     width: 500px;
   }
 }
@@ -836,11 +873,11 @@ header {
     margin-top: 20px;
     
   }
-  .info1 {
+  .info11 {
     width: 400px;
     height: 55rem;
   }
-  .info2 {
+  .info22 {
     width: 400px;
     height: 55rem;
   }
@@ -867,11 +904,11 @@ header {
     padding: 20px;
     text-align: center;
   }
-  .info1 {
+  .info11 {
     width: 350px;
     height: 55rem;
   }
-  .info2 {
+  .info22 {
     width: 350px;
     height: 58rem;
   }
@@ -912,10 +949,10 @@ header {
     font-size: 15px;
   }
 
-  .info1 {
+  .info11 {
     width: 300px;
   }
-  .info2 {
+  .info22 {
     width: 300px;
     height: 70rem;
   }

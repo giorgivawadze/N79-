@@ -8,7 +8,7 @@ body {
   color: white;
 }
 
-.dark-mode .maindi {
+.dark-mode .forheader {
   transition: 0.3s;
   background-color: #222;
 }
@@ -23,31 +23,30 @@ body {
 .dark-mode .ultag li a {
   color: #fff;
 }
-.ultag.active{
+.ultag.active {
   display: flex;
   flex-direction: column;
   position: absolute;
   background-color: rgb(7, 28, 52);
   top: 10%;
-  width: 80%;
+  width: 100%;
   height: 260px;
   padding: 20px;
-
 }
 
-.ultag2.active li  {
+.ultag2.active li {
   padding-bottom: 20px;
 }
 .dark-mode .ultag.active {
   transition: 0.3s;
   background-color: #222;
 }
-.dark-mode .ultag2.active li  {
+.dark-mode .ultag2.active li {
   padding-bottom: 20px;
 }
 .dark-mode .ultag2.active {
   transition: 0.3s;
-  background-color: #222; 
+  background-color: #222;
   height: 10px;
 }
 
@@ -243,9 +242,7 @@ input:checked + .slider:before {
 .dropdown {
   position: relative;
   display: inline-block;
- 
 }
-
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -264,7 +261,7 @@ input:checked + .slider:before {
   height: 228px;
   display: none;
   position: absolute;
-  
+
   background-color: rgb(7, 28, 52);
   min-width: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -281,13 +278,13 @@ input:checked + .slider:before {
   z-index: 1;
 }
 .margin-li {
-  background-color:rgb(7, 28, 52) ;
+  background-color: rgb(7, 28, 52);
 }
 .dark-mode .margin-li {
   background-color: #222;
 }
 .fontsize {
-  background-color:rgb(7, 28, 52) ;
+  background-color: rgb(7, 28, 52);
 }
 .dark-mode .fontsize {
   background-color: #222;
@@ -306,7 +303,7 @@ input:checked + .slider:before {
 }
 
 .margin-li {
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 }
 
 /* Links inside the dropdown */
@@ -363,10 +360,9 @@ input:checked + .slider:before {
   font-size: 19px;
   display: flex;
   align-items: center;
-  margin-left: 80px;
+  justify-content: center;
   position: relative;
 }
-
 
 .ultag2 {
   font-size: 19px;
@@ -401,7 +397,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 header {
@@ -424,7 +420,6 @@ header {
   width: 90px;
   height: 90px;
   border-radius: 50px;
-  margin-left: 90px;
 }
 .n79 {
   font-size: 30px;
@@ -442,10 +437,10 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  font-size: 20px;
   width: 100%;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
   position: relative;
+  justify-content: center;
 }
 
 .line {
@@ -581,24 +576,20 @@ header {
 }
 .dark-mode .swiperbtn1 {
   background-color: #222;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 .dark-mode .swiperbtn2 {
   background-color: #222;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 .swiperprev {
   color: #fff;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
-
-
 }
 .swipernext {
   color: #fff;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
-
 }
-
 
 .divofdiv79 {
   position: absolute;
@@ -632,14 +623,14 @@ header {
 .container {
   height: 500px;
   margin-top: 140px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* miniinfo */
 .info {
   width: 600px;
   display: flex;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
@@ -783,18 +774,16 @@ header {
 }
 /* minifooter */
 
-
 .minfoot {
   background-color: #0d0c3f;
   display: flex;
   flex-direction: column;
   height: 5rem;
   align-items: center;
-  
 }
 .dark-mode .minfoot {
   background-color: #202020;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 .minfootminfooter {
   display: flex;
@@ -804,10 +793,34 @@ header {
 }
 .minfoot span {
   color: #fff;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-top: 5px;
 }
 .minfootminfooter a {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* n1kko lance */
+.headerlogo {
+  padding: 7px;
+}
+/* .btnspan {
+  font-size: 10px !important;
+} */
+.active {
+  width: 100% !important;
+}
+.forheader {
+  display: flex;
+  background-color: rgb(15, 49, 90);
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.headerleft,
+.headerright,
+.headermid {
+  margin: auto 1.2rem !important;
 }

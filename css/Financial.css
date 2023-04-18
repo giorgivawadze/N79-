@@ -21,6 +21,52 @@ body {
   color: white;
 }
 
+/* added */
+
+
+.headerlogo {
+  padding: 7px;
+}
+.ultag {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dark-mode .forheader {
+  transition: 0.3s;
+  background-color: #222;
+}
+.active {
+  width: 100% !important;
+}
+.forheader {
+  display: flex;
+  background-color: rgb(15, 49, 90);
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.forheader {
+  height: 80px;
+  justify-content: space-between;
+}
+
+.headerleft,
+.headerright,
+.headermid {
+  margin: auto 1.2rem !important;
+}
+
+
+
+
+
+
+
+/* end */
+
 .dark-mode .maindi {
   transition: 0.3s;
   background-color: #222;
@@ -477,12 +523,7 @@ input:checked + .slider:before {
   display: block;
 }
 
-.ultag {
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  margin-left: 80px;
-}
+
 
 
 
@@ -498,7 +539,6 @@ input:checked + .slider:before {
 .show {
   display: block;
 }
-
 .maindi {
   display: flex;
   width: 100%;
@@ -512,7 +552,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 header {
@@ -553,12 +593,11 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  font-size: 20px;
   width: 100%;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
   position: relative;
+  justify-content: center;
 }
-
 .line {
   transition: transform 0.3s ease;
   border-radius: 10px;
@@ -965,16 +1004,16 @@ header {
   color: rgb(255, 255, 255);
 }
 
-.menu-bar {
+/* .menu-bar {
   background-color: rgb(7, 28, 52);
   height: 50px;
   display: flex;
   align-items: center;
   font-size: 20px;
-  /* max-width:1520px ;*/
+
   width: 100%;
   position: relative;
-}
+} */
 
 .line {
   transition: transform 0.3s ease;
@@ -1027,7 +1066,6 @@ header {
 .ultag {
   display: flex;
   align-items: center;
-  margin-left: 80px;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
 }
 
@@ -1265,6 +1303,7 @@ h1 {
 .pagination-container {
   display: flex;
   align-items: center;
+
 }
 
 .pagination-number,

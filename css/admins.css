@@ -32,6 +32,43 @@ body {
   color: #fff;
 }
 
+/* added */
+
+
+.headerlogo {
+  padding: 7px;
+}
+.ultag {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.active {
+  width: 100% !important;
+}
+.forheader {
+  display: flex;
+  background-color: rgb(15, 49, 90);
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.headerleft,
+.headerright,
+.headermid {
+  margin: auto .2rem !important;
+}
+
+
+
+
+
+
+
+/* end */
 .dark-mode .vl {
   border-right: 4px solid rgb(255, 255, 255);
 }
@@ -386,12 +423,7 @@ input:checked + .slider:before {
   display: block;
 }
 
-.ultag {
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  margin-left: 80px;
-}
+
 
 .ultag2 {
   font-size: 19px;
@@ -545,7 +577,7 @@ header {
   position: absolute;
   background-color: rgb(7, 28, 52);
   top: 10%;
-  width: 80%;
+  width: 100% ;
   height: 360px;
   padding: 20px;
 }
@@ -674,7 +706,7 @@ header {
     position: absolute;
     background-color: rgb(7, 28, 52);
     top: 10%;
-    width: 80%;
+    width: 100%;
     height: 360px;
     padding: 20px;
   }
@@ -711,7 +743,7 @@ header {
     position: absolute;
     background-color: rgb(7, 28, 52);
     top: 10%;
-    width: 75%;
+    width: 100%;
     height: 300px;
     padding: 20px;
     text-align: center;
@@ -1035,7 +1067,6 @@ header {
 .ultag {
   display: flex;
   align-items: center;
-  margin-left: 80px;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
 }
 

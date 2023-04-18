@@ -27,11 +27,15 @@ body {
   color: white;
   padding: 10px;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 .dropbtn3 span {
-  font-size: 12px;
+  font-size: 14px;
 }
+.dropbtn span {
+  font-size: 14px;
+}
+
 
 
 
@@ -174,7 +178,40 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+/* added */
 
+.headerlogo {
+  padding: 7px;
+}
+/* .btnspan {
+  font-size: 10px !important;
+} */
+.active {
+  width: 100% !important;
+}
+.forheader {
+  display: flex;
+  background-color: rgb(15, 49, 90);
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.headerlogo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* end */
 .slider:before {
   position: absolute;
   content: "";
@@ -260,11 +297,11 @@ input:checked + .slider:before {
 
 .dropbtn span {
   margin-right: 5px;
-  font-size: 19px;
+
 }
 
 .dropbtn3 span {
-  font-size: 19px;
+
   margin-right: 5px;
 }
 
@@ -395,18 +432,12 @@ input:checked + .slider:before {
   text-decoration: none;
   display: block;
 }
-
 .ultag {
   font-size: 19px;
   display: flex;
   align-items: center;
-  margin-left: 80px;
-}
-
-.ultag2 {
-  font-size: 19px;
-  display: flex;
-  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .fontsize {
@@ -435,8 +466,9 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
+
 
 header {
   position: fixed;
@@ -458,7 +490,7 @@ header {
   width: 90px;
   height: 90px;
   border-radius: 50px;
-  margin-left: 90px;
+  /* margin-left: 90px; */
 }
 .n79 {
   font-size: 30px;
@@ -471,16 +503,18 @@ header {
   color: rgb(255, 255, 255);
 }
 
+
 .menu-bar {
   background-color: rgb(7, 28, 52);
   height: 50px;
   display: flex;
   align-items: center;
-  font-size: 20px;
   width: 100%;
   font-family: "BPG Mrgvlovani Caps", sans-serif;
   position: relative;
+  justify-content: center;
 }
+
 
 .line {
   transition: transform 0.3s ease;
@@ -547,16 +581,15 @@ header {
 }
 
 
-.ultag.active{
+.ultag.active {
   display: flex;
   flex-direction: column;
   position: absolute;
   background-color: rgb(7, 28, 52);
   top: 10%;
-  width: 80%;
+  width: 100%;
   height: 260px;
   padding: 20px;
-
 }
 .ultag2.active {
   display: flex;
@@ -664,6 +697,18 @@ header {
     margin-top: 20px;
     
   }
+  .service {
+    width: 25rem;
+  }
+  .service2 {
+    width: 25rem;
+  }
+  .main {
+    width: 25rem;
+  }
+  .main2 {
+    width: 25rem;
+  }
   .info1 {
     width: 400px;
     height: 55rem;
@@ -736,7 +781,7 @@ header {
   .row {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -817,6 +862,7 @@ header {
 .service {
   background: #fcfcfc;
   padding: 30px;
+  width: 30rem;
   height: 44rem;
   border-radius: 10px;
   position: absolute;
@@ -830,6 +876,7 @@ header {
   background: #fcfcfc;
   height: 44rem;
   padding: 30px;
+  width: 30rem;
   border-radius: 10px;
   position: absolute;
   bottom: 0;

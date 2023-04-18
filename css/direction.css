@@ -384,18 +384,7 @@ input:checked + .slider:before {
   display: block;
 }
 
-.ultag {
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  margin-left: 80px;
-}
 
-.ultag2 {
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-}
 
 .fontsize {
   font-size: 13px;
@@ -1066,10 +1055,15 @@ header {
 }
 
 .ultag {
+  font-size: 19px;
   display: flex;
   align-items: center;
-  margin-left: 80px;
-  font-family: "BPG Mrgvlovani Caps", sans-serif;
+  justify-content: center;
+  position: relative;
+}
+.dark-mode .forheader {
+  transition: 0.3s;
+  background-color: #222;
 }
 
 
